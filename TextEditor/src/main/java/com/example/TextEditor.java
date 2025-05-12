@@ -8,7 +8,7 @@ public class TextEditor {
         ServiceLoader<TextFormatterPlugin> plugins =
                 ServiceLoader.load(TextFormatterPlugin.class);
 
-        String text = "Hello, Plugin World!";
+        String text = "Hello, It's learning example!";
         for (TextFormatterPlugin plugin : plugins) {
             System.out.println(plugin.format(text));
         }
